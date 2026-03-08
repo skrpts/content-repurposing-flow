@@ -1,0 +1,39 @@
+# --- Identity ---
+name: "content-repurposing-flow"
+display_name: "Content Repurposing Flow"
+description: "Transforms source content into multiple format adaptations per channel"
+version: "1.0.0"
+engine: ">=1.0.0"
+
+# --- Attribution ---
+author:
+  name: "skrptiq"
+  url: "https://hub.skrptiq.ai"
+
+licence: "MIT"
+repository: "https://github.com/skrpts/content-repurposing-flow"
+
+# --- Discovery (Hub) ---
+category: "content-creator"
+tags:
+  - "repurposing"
+  - "multi-channel"
+  - "content"
+
+# --- Security & Access ---
+requires:
+  services:
+    - "anthropic-claude"
+  permissions: []
+  data_handling: []
+
+# --- Contents ---
+contents:
+  skills: 2
+  prompts: 2
+  workflows: 1
+  services: 0
+  sources: 2
+  documents: 0
+  assets: 0
+  total: 7
