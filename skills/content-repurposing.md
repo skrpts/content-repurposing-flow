@@ -5,7 +5,7 @@ title: Content Repurposing
 description: "Adapts content across formats and platforms"
 tags: [Tested]
 connections:
-  - target: anthropic-claude
+  - target: llm-service
     type: runs_on
   - target: social-media-platform-guide
     type: references

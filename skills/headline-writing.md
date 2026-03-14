@@ -5,7 +5,7 @@ title: Headline Writing
 description: "Crafts compelling headlines and titles optimised for clicks and clarity"
 tags: []
 connections:
-  - target: anthropic-claude
+  - target: llm-service
     type: runs_on
 ---
 

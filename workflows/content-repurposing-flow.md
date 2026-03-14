@@ -45,3 +45,40 @@ Invoke the **social-media-post-generator** prompt to create platform-specific po
 Invoke the **newsletter-writer** prompt to compose a newsletter edition from the repurposed content. Include a compelling subject line, engaging opening, structured sections, and a call to action.
 
 **Output:** Complete newsletter draft ready for review.
+
+## Inputs
+
+| Name | Required | Description | Example |
+|------|----------|-------------|---------|
+| `{{input.source_content}}` | Yes | Source content | `Paste the relevant brief, notes, source material, or dataset here.` |
+
+## Outputs
+
+| Name | Description |
+|------|-------------|
+| Adapted content per target format | Adapted content per target format |
+| Ready-to-publish social media posts per platform | Ready-to-publish social media posts per platform |
+| Complete newsletter draft ready for review | Complete newsletter draft ready for review |
+
+## Setup
+
+Before running this workflow:
+
+1. No external services required — paste your content directly and provide any supporting context as inputs or source nodes.
+2. Review the included documents, assets, or source nodes and customise them to match your team, brand, or domain conventions where needed.
+3. No specific AI provider or API key is required beyond your configured skrptiq LLM provider.
+
+## Provider Notes
+
+- Most stages work with any capable model; stronger models usually improve synthesis, judgement, and writing quality.
+- Extraction, classification, and formatting steps generally run well on smaller or faster models.
+- Because there are no vendor-specific integrations here, provider choice is mostly a trade-off between speed, quality, and cost.
+
+## Example Input
+
+To test this workflow immediately after import:
+
+```
+Source Content: "Paste the relevant brief, notes, source material, or dataset here."
+```
+
