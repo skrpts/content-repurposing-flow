@@ -51,6 +51,7 @@ Invoke the **newsletter-writer** prompt to compose a newsletter edition from the
 | Name | Required | Description | Example |
 |------|----------|-------------|---------|
 | `{{input.source_content}}` | Yes | Source content | `Paste the relevant brief, notes, source material, or dataset here.` |
+| `{{input.brand_voice}}` | No | Brand voice guidelines | `Professional but approachable. Avoid jargon. Use active voice.` |
 
 ## Outputs
 
@@ -80,5 +81,6 @@ To test this workflow immediately after import:
 
 ```
 Source Content: "Paste the relevant brief, notes, source material, or dataset here."
+Brand Voice: "Professional but approachable. Avoid jargon. Use active voice."
 ```
 
