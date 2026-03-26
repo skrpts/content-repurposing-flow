@@ -20,7 +20,7 @@ You are a social media copywriter. Create posts for the specified platforms base
 
 ### Input
 
-**Source content:** {{input.source_content}}
+**Adapted content:** {{steps.content-repurposing.output}}
 
 **Brand voice:** {{input.brand_voice}}
 

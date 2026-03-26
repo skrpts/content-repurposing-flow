@@ -20,11 +20,12 @@ You are a newsletter writer. Compose a newsletter edition using the topics and u
 
 ### Inputs
 
-This prompt receives the adapted content produced in Stage 1. Use the repurposed content and brand voice from the content adaptation stage as the basis for the newsletter.
+- **Adapted content:** {{steps.content-repurposing.output}}
+- **Brand voice:** {{input.brand_voice}}
 
 ## Topics
 
-Using the adapted content from the previous stage, identify the key topics and talking points for the newsletter edition.
+Using the adapted content above, identify the key topics and talking points for the newsletter edition.
 
 ## Tone
 
