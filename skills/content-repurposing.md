@@ -2,13 +2,11 @@
 type: skill
 id: content-repurposing
 title: Content Repurposing
-description: "Adapts content across formats and platforms"
-tags: [Tested]
+description: "Transforms a single piece of content into multiple formats for different platforms"
+tags: [Production]
 connections:
   - target: llm-service
     type: runs_on
-  - target: social-media-platform-guide
-    type: references
 ---
 
 ## Capability

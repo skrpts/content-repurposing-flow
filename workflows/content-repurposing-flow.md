@@ -10,7 +10,9 @@ connections:
   - target: social-media-post-generator
     type: uses
   - target: newsletter-writer
-    type: uses
+    type: uses  - target: llm-service
+    type: runs_on
+
 metadata:
   estimated_duration: "5-15 minutes"
   trigger: manual
