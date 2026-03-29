@@ -26,15 +26,16 @@ requires:
   services:
     - "llm-service"
   permissions: []
-  data_handling: []
+  data_handling:
+    - "pii"
 
 # --- Contents ---
 contents:
-  skills: 2
+  skills: 5
   prompts: 2
   workflows: 1
   services: 1
   sources: 2
   documents: 0
   assets: 0
-  total: 8
+  total: 11

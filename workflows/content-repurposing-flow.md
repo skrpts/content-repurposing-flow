@@ -10,7 +10,14 @@ connections:
   - target: social-media-post-generator
     type: uses
   - target: newsletter-writer
-    type: uses  - target: llm-service
+    type: uses
+  - target: content-ideation
+    type: uses
+  - target: content-briefing
+    type: uses
+  - target: editorial-review
+    type: uses
+  - target: llm-service
     type: runs_on
 
 metadata:
