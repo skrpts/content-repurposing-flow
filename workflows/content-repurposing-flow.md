@@ -3,7 +3,7 @@ type: workflow
 id: content-repurposing-flow
 title: Content Repurposing Flow
 description: "Transforms source content into multiple format adaptations per channel"
-tags: [Tested, writing:content, analysis:content]
+tags: [Tested, Content, Writing]
 connections:
   - target: content-repurposing
     type: uses

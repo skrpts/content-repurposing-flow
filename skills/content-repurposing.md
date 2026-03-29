@@ -3,7 +3,7 @@ type: skill
 id: content-repurposing
 title: Content Repurposing
 description: "Transforms a single piece of content into multiple formats for different platforms"
-tags: [Production, writing:content, analysis:content]
+tags: [Production, Content, Writing]
 connections:
   - target: llm-service
     type: runs_on

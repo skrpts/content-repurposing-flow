@@ -3,7 +3,7 @@ type: prompt
 id: social-media-post-generator
 title: Social Media Post Generator
 description: "Creates platform-specific social media posts from source content"
-tags: [Customer-Facing, writing:content, analysis:content]
+tags: [Customer-Facing, Content, Writing]
 connections:
   - target: content-repurposing
     type: derived_from
