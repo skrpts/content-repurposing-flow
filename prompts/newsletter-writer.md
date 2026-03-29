@@ -3,7 +3,7 @@ type: prompt
 id: newsletter-writer
 title: Newsletter Writer
 description: "Composes a newsletter edition from curated topics and updates"
-tags: [Production]
+tags: [Production, writing:content, analysis:content]
 connections: []
 metadata:
   output_format: markdown

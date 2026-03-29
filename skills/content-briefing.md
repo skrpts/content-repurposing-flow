@@ -3,7 +3,7 @@ type: skill
 id: content-briefing
 title: Content Briefing
 description: "Creates structured briefs for writers and content producers"
-tags: [Production]
+tags: [Production, writing:content, analysis:content]
 connections:
   - target: llm-service
     type: runs_on

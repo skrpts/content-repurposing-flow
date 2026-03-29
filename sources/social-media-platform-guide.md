@@ -3,7 +3,7 @@ type: source
 id: social-media-platform-guide
 title: Social Media Platform Guide
 description: "Platform specifications, character limits, and best practices for major social networks"
-tags: [Production]
+tags: [Production, writing:content, analysis:content]
 connections: []
 ---
 
