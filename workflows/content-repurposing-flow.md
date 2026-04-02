@@ -20,12 +20,12 @@ connections:
   - target: llm-service
     type: runs_on
 
+  - target: headline-writing
+  - target: social-media-platform-guide
 metadata:
   estimated_duration: "5-15 minutes"
   trigger: manual
-  - target: headline-writing
     type: uses
-  - target: social-media-platform-guide
     type: references
 ---
 
