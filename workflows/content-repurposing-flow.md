@@ -19,14 +19,13 @@ connections:
     type: uses
   - target: llm-service
     type: runs_on
-
   - target: headline-writing
+    type: references
   - target: social-media-platform-guide
+    type: uses
 metadata:
   estimated_duration: "5-15 minutes"
   trigger: manual
-    type: uses
-    type: references
 ---
 
 ## Overview
