@@ -23,6 +23,10 @@ connections:
 metadata:
   estimated_duration: "5-15 minutes"
   trigger: manual
+  - target: headline-writing
+    type: uses
+  - target: social-media-platform-guide
+    type: references
 ---
 
 ## Overview
