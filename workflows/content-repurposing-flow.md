@@ -15,13 +15,13 @@ connections:
     type: uses
   - target: content-briefing
     type: uses
-  - target: editorial-review
-    type: uses
   - target: llm-service
     type: runs_on
   - target: headline-writing
     type: references
   - target: social-media-platform-guide
+    type: uses
+  - target: language-polish
     type: uses
 metadata:
   estimated_duration: "5-15 minutes"
