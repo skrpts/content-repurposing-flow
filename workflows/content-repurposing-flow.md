@@ -7,10 +7,6 @@ tags: [Tested, Content, Writing]
 connections:
   - target: content-repurposing
     type: uses
-  - target: social-media-post-generator
-    type: uses
-  - target: newsletter-writer
-    type: uses
   - target: content-ideation
     type: uses
   - target: content-briefing
