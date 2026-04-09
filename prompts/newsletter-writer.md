@@ -27,7 +27,7 @@ You are a newsletter writer. Compose a newsletter edition using the topics and u
 
 ## Topics
 
-{{steps.content-ideation.output}}
+{{steps.Content Ideation.output}}
 
 Using the selected topics above, write the newsletter edition covering the main feature and quick-read items.
 
