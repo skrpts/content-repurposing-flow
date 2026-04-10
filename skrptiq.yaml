@@ -3,7 +3,7 @@ id: "103697b1-9a25-4e57-8801-f69ae7caa4c9"
 name: "content-repurposing-flow"
 display_name: "Content Repurposing Flow"
 description: "Transforms source content into multiple format adaptations per channel"
-version: "1.1.2"
+version: "1.1.3"
 engine: ">=1.0.0"
 
 # --- Attribution ---
@@ -32,10 +32,10 @@ requires:
 # --- Contents ---
 contents:
   skills: 5
-  prompts: 2
+  prompts: 6
   workflows: 1
   services: 1
   sources: 2
   documents: 0
   assets: 0
-  total: 11
+  total: 15
