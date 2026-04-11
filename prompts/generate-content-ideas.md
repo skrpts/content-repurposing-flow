@@ -4,6 +4,13 @@ id: generate-content-ideas
 title: "Generate Content Ideas"
 description: "Produces topic ideas from trends, keywords, and audience interests"
 tags: [Production, Content, Planning]
+inputs:
+  content_context:
+    label: "Content Context"
+    description: "Background context for the content — what exists, what the goals are, who it serves"
+    example: "B2B SaaS blog targeting CTOs. Monthly publishing cadence. Focus on engineering leadership."
+    required: true
+    type: text
 connections:
   - target: content-ideation
     type: derived_from

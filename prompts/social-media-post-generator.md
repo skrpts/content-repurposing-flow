@@ -4,6 +4,25 @@ id: social-media-post-generator
 title: Social Media Post Generator
 description: "Creates platform-specific social media posts from source content"
 tags: [Customer-Facing, Content, Writing]
+inputs:
+  target_platforms:
+    label: "Target Platforms"
+    description: "Platforms to create content for"
+    example: "LinkedIn, Twitter"
+    required: true
+    type: text
+  campaign_topic:
+    label: "Campaign Topic"
+    description: "The topic or theme for the campaign"
+    example: "Product launch for new AI features"
+    required: true
+    type: text
+  key_messages:
+    label: "Key Messages"
+    description: "Core messages to communicate"
+    example: "Save 10 hours/week on repetitive AI tasks. No code required."
+    required: true
+    type: text
 connections:
   - target: content-repurposing
     type: derived_from
