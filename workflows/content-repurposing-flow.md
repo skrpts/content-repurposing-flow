@@ -22,6 +22,16 @@ connections:
 metadata:
   estimated_duration: "5-15 minutes"
   trigger: manual
+execution:
+  - skill: "content-repurposing"
+  - skill: "content-ideation"
+    input_from: "content-repurposing"
+  - skill: "content-briefing"
+    input_from: "content-ideation"
+  - skill: "social-media-platform-guide"
+    input_from: "content-briefing"
+  - skill: "language-polish"
+    input_from: "social-media-platform-guide"
 ---
 
 ## Overview
