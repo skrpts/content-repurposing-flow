@@ -32,6 +32,21 @@ execution:
     input_from: "content-briefing"
   - skill: "language-polish"
     input_from: "social-media-platform-guide"
+execution:
+  - skill: "content-repurposing"
+    step_type: "generation"
+  - skill: "content-ideation"
+    step_type: "generation"
+    input_from: "content-repurposing"
+  - skill: "content-briefing"
+    step_type: "generation"
+    input_from: "content-ideation"
+  - skill: "social-media-platform-guide"
+    step_type: "generation"
+    input_from: "content-briefing"
+  - skill: "language-polish"
+    step_type: "content"
+    input_from: "social-media-platform-guide"
 ---
 
 ## Overview
