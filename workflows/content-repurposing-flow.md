@@ -24,16 +24,6 @@ metadata:
   trigger: manual
 execution:
   - skill: "content-repurposing"
-  - skill: "content-ideation"
-    input_from: "content-repurposing"
-  - skill: "content-briefing"
-    input_from: "content-ideation"
-  - skill: "social-media-platform-guide"
-    input_from: "content-briefing"
-  - skill: "language-polish"
-    input_from: "social-media-platform-guide"
-execution:
-  - skill: "content-repurposing"
     step_type: "generation"
   - skill: "content-ideation"
     step_type: "generation"
@@ -116,4 +106,3 @@ To test this workflow immediately after import:
 Source Content: "Paste the relevant brief, notes, source material, or dataset here."
 Brand Voice: "Professional but approachable. Avoid jargon. Use active voice."
 ```
-
