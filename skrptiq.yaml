@@ -3,7 +3,7 @@ id: "103697b1-9a25-4e57-8801-f69ae7caa4c9"
 name: "content-repurposing-flow"
 display_name: "Content Repurposing Flow"
 description: "Transforms source content into multiple format adaptations per channel"
-version: "1.1.9"
+version: "1.1.10"
 engine: ">=1.0.0"
 
 # --- Attribution ---
@@ -28,15 +28,6 @@ requires:
   permissions: []
   data_handling:
     - "pii"
-
-# --- Output ---
-output_step: "social-media-platform-guide"
-composite_steps:
-  - "content-repurposing"
-  - "content-ideation"
-  - "content-briefing"
-  - "social-media-platform-guide"
-  - "language-polish"
 
 # --- Contents ---
 contents:

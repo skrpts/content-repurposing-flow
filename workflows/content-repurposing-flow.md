@@ -22,6 +22,13 @@ connections:
 metadata:
   estimated_duration: "5-15 minutes"
   trigger: manual
+output_step: "social-media-platform-guide"
+composite_steps:
+  - "content-repurposing"
+  - "content-ideation"
+  - "content-briefing"
+  - "social-media-platform-guide"
+  - "language-polish"
 execution:
   - skill: "content-repurposing"
     step_type: "generation"
