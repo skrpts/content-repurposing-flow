@@ -3,7 +3,13 @@ type: skill
 id: content-briefing
 title: Content Briefing
 description: "Creates structured briefs for writers and content producers"
-tags: [Production, Content, Writing]
+tags: [Production, Content, Optimisation]
+context_params:
+  target_audience:
+    label: "Target Audience"
+    description: "Who this content is for"
+    default: ""
+    required: true
 connections:
   - target: llm-service
     type: runs_on

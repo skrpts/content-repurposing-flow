@@ -34,8 +34,12 @@ execution:
     step_type: "generation"
   - skill: "content-ideation"
     step_type: "generation"
+    context:
+      content_context: ""
   - skill: "content-briefing"
     step_type: "generation"
+    context:
+      target_audience: ""
   - skill: "social-media-platform-guide"
     step_type: "generation"
   - skill: "language-polish"
