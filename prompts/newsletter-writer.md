@@ -29,7 +29,9 @@ inputs:
     example: "OpenAI launched GPT-5. Notion added AI blocks."
     required: true
     type: text
-connections: []
+connections:
+  - target: content-repurposing
+    type: derived_from
 metadata:
   output_format: markdown
   prompt_type: task
