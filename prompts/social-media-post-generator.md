@@ -54,7 +54,7 @@ For each post, provide:
 
 ### Inputs
 
-- **Source content:** {{steps.Create Content Brief.output}}
+- **Source content:** {{steps.Content Briefing.output}}
 - **Target platforms:** {{input.target_platforms}}
 - **Campaign context:** {{input.campaign_topic}}
 - **Key message:** {{input.key_messages}}

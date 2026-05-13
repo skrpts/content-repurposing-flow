@@ -37,20 +37,20 @@ execution:
     prompt: "generate-content-ideas"
     step_type: "generation"
     context:
-      content_context: ""
+      content_context: "No additional context"
   - skill: "content-briefing"
     prompt: "create-content-brief"
     step_type: "generation"
     context:
-      target_audience: ""
+      target_audience: "General professional audience"
   - skill: "social-media-platform-guide"
-    step_type: "generation"
+    step_type: "local.template"
   - skill: "language-polish"
     prompt: "polish-language"
     step_type: "content"
     context:
-      voice_profile: ""
-      grammar_strictness: ""
+      voice_profile: "Neutral professional tone"
+      grammar_strictness: "Professional"
 ---
 
 ## Overview
