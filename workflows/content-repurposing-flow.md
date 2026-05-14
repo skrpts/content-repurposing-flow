@@ -22,7 +22,7 @@ connections:
 metadata:
   estimated_duration: "5-15 minutes"
   trigger: manual
-output_step: "social-media-platform-guide"
+output_step: "language-polish"
 composite_steps:
   - "content-repurposing"
   - "content-ideation"
