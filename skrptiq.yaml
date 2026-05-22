@@ -3,7 +3,7 @@ id: "103697b1-9a25-4e57-8801-f69ae7caa4c9"
 name: "content-repurposing-flow"
 display_name: "Content Repurposing Flow"
 description: "Transforms source content into multiple format adaptations per channel"
-version: "1.1.21"
+version: "1.1.23"
 engine: ">=0.1.0"
 
 # --- Attribution ---
@@ -17,9 +17,9 @@ repository: "https://github.com/skrpts/content-repurposing-flow"
 # --- Discovery (Hub) ---
 category: "content-creator"
 tags:
-  - "repurposing"
-  - "multi-channel"
   - "content"
+  - "multi-channel"
+  - "repurposing"
 
 # --- Security & Access ---
 requires:
