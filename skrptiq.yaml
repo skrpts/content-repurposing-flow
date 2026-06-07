@@ -3,7 +3,7 @@ id: "103697b1-9a25-4e57-8801-f69ae7caa4c9"
 name: "content-repurposing-flow"
 display_name: "Content Repurposing Flow"
 description: "Transforms source content into multiple format adaptations per channel"
-version: "1.1.24"
+version: "1.1.26"
 engine: ">=0.1.0"
 
 # --- Attribution ---
@@ -22,6 +22,60 @@ tags:
   - "repurposing"
 
 # --- Security & Access ---
+dependencies:
+  - id: "89a5666b-057e-4acc-9c1b-15858bd832dd"
+    name: "brand-voice-guide"
+    version: 1.0.1
+    checksum: "sha256:8cd3ac3f349380983bbb796a66d6222fbf59f0cf85fbda7dc278c28a6339adb8"
+  - id: "93ddb5e6-8e69-4bff-9a85-b5ebbc1ad879"
+    name: "content-briefing"
+    version: 1.0.1
+    checksum: "sha256:222045911203091cf63dfbbc52a5b07721d3f3f2b3423bea43cbfba5499b39c1"
+  - id: "cbf98d0e-be49-48c1-b893-dd03d29f27a2"
+    name: "content-ideation"
+    version: 1.0.1
+    checksum: "sha256:279428be8d4ba466d9e32d0a45b2a6d1600f2528ce1e417a941949dce3e56414"
+  - id: "508a4431-d089-41f5-ad9e-eb10b7f6d03a"
+    name: "content-repurposing"
+    version: 1.0.1
+    checksum: "sha256:f0bf38c0b1c6da7bebd20769cb7d4e58687e4d7bbee3ea9b9880dde34945877d"
+  - id: "18c65203-c687-46f1-9ded-e09eb3f7862a"
+    name: "create-content-brief"
+    version: 1.0.2
+    checksum: "sha256:1edb557e9e01e6a7da2c81988b544c84c579bc92eaa982ea8dd99df4a9dbafa2"
+  - id: "370c217e-d5ed-46bc-9475-6e1ba259267a"
+    name: "generate-content-ideas"
+    version: 1.0.2
+    checksum: "sha256:a5ca3e1bf676fb2e95f63446a913ed9493b43ac57cf48b1b32f56e0b124d0019"
+  - id: "eef0f2df-0ee2-4b15-b400-ce3cf2193600"
+    name: "headline-writing"
+    version: 1.0.1
+    checksum: "sha256:9f10c6e43ac58cb5b8d64428f7be52d2e8c2ffc96ecbea61631dcf42b8ed2c16"
+  - id: "3db66b8b-8758-4503-a555-5330f3f9b3d9"
+    name: "language-polish"
+    version: 1.0.1
+    checksum: "sha256:ca27d401a2049f5508f0c6d5dc387a2fc4b3b4e61b439d5e8f717b448708b18b"
+  - id: "fcab9536-a13e-49c9-b0c3-bb3097682e69"
+    name: "llm-service"
+    version: 1.0.1
+    checksum: "sha256:455c8bf590a9426d830bffd1a741afa058149bc29c58186c34d0d8699bea4bda"
+  - id: "9b1771e0-39b0-4fbc-8d45-738f51b6083a"
+    name: "polish-language"
+    version: 1.0.3
+    checksum: "sha256:b48c92d9a1f25091d5b337b871ef065e45e9fcd3a9117a22e63bab19a1d0325a"
+  - id: "8a9ac21e-e26c-4064-825a-5150eb24df44"
+    name: "social-media-platform-guide"
+    version: 1.0.1
+    checksum: "sha256:e42f7e182c331773385b464aee684ce8ae6cf9b4d0d359cddce3249d6a4dd92e"
+  - id: "e739e678-990e-4165-a3c1-86394bf42d58"
+    name: "social-media-post-generator"
+    version: 1.0.3
+    checksum: "sha256:2a63a60b8ec9239ba0b9b4f111804a76db9e42d05c3a1b17731f09984f07bc0b"
+  - id: "e95fc43e-3d81-4fbb-82be-279c8a58757f"
+    name: "write-headlines"
+    version: 1.0.3
+    checksum: "sha256:6184682c9341e06fdd483eaef3559786bdd0a6f976691f1a7e6265e78bad075c"
+
 requires:
   services:
     - "llm-service"
@@ -31,11 +85,11 @@ requires:
 
 # --- Contents ---
 contents:
-  skills: 5
-  prompts: 6
+  skills: 0
+  prompts: 1
   workflows: 1
-  services: 1
-  sources: 2
+  services: 0
+  sources: 0
   documents: 0
   assets: 0
-  total: 15
+  total: 2
