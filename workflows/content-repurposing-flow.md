@@ -33,9 +33,11 @@ execution:
   - skill: "content-repurposing"
     prompt: "social-media-post-generator"
     step_type: "generation"
+    output: { name: "repurposed_content", type: "text" }
   - skill: "content-ideation"
     prompt: "generate-content-ideas"
     step_type: "generation"
+    output: { name: "ideas", type: "list" }
     context:
       content_context: "No additional context"
     bindings:
@@ -45,10 +47,12 @@ execution:
   - skill: "content-briefing"
     prompt: "create-content-brief"
     step_type: "generation"
+    output: { name: "brief", type: "text" }
     context:
       target_audience: "General professional audience"
   - skill: "social-media-platform-guide"
     step_type: "local.template"
+    output: { name: "platform_guide", type: "text" }
   - skill: "language-polish"
     prompt: "polish-language"
     step_type: "content"

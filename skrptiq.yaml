@@ -3,7 +3,7 @@ id: "103697b1-9a25-4e57-8801-f69ae7caa4c9"
 name: "content-repurposing-flow"
 display_name: "Content Repurposing Flow"
 description: "Transforms source content into multiple format adaptations per channel"
-version: "1.1.26"
+version: "1.1.27"
 engine: ">=0.1.0"
 
 # --- Attribution ---
@@ -93,3 +93,17 @@ contents:
   documents: 0
   assets: 0
   total: 2
+
+security:
+  status: "pass"
+  scanned_at: "2026-07-02T19:29:19.498Z"
+  scanner_version: "3.3.0"
+  syntactic: "pass"
+  structural: "pass"
+  detected:
+    services: ["llm-service"]
+    permissions: []
+    data_handling: []
+  undeclared: []
+  warnings: []
+  report_url: "https://hub.skrptiq.ai/skrpts/content-repurposing-flow/security"
