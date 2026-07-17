@@ -50,7 +50,7 @@ execution:
     output: { name: "brief", type: "text" }
     context:
       target_audience: "General professional audience"
-  - skill: "social-media-platform-guide"
+  - id: "social-media-platform-guide"
     step_type: "local.template"
     output: { name: "platform_guide", type: "text" }
   - skill: "language-polish"
@@ -63,7 +63,7 @@ execution:
 
 ## Overview
 
-This workflow takes a single piece of source content and produces multiple format adaptations tailored to different channels. It maximises the ROI on content creation by systematically repurposing material for social media, email, and other platforms.
+This workflow takes a single piece of source content and produces multiple format adaptations tailored to different channels. It maximizes the ROI on content creation by systematically repurposing material for social media, email, and other platforms.
 
 ## Pipeline Stages
 
@@ -71,7 +71,7 @@ This workflow takes a single piece of source content and produces multiple forma
 
 **Input:** Source content (blog post, article, video transcript, podcast notes, etc.)
 
-Invoke the **content-repurposing** skill to analyse and transform the source content into multiple platform-specific formats. Identify core messages, supporting data points, and segments that map well to each target format.
+Invoke the **content-repurposing** skill to analyze and transform the source content into multiple platform-specific formats. Identify core messages, supporting data points, and segments that map well to each target format.
 
 **Output:** Adapted content per target format.
 
@@ -111,7 +111,7 @@ Invoke the **newsletter-writer** prompt to compose a newsletter edition from the
 Before running this workflow:
 
 1. No external services required — paste your content directly and provide any supporting context as inputs or source nodes.
-2. Review the included documents, assets, or source nodes and customise them to match your team, brand, or domain conventions where needed.
+2. Review the included documents, assets, or source nodes and customize them to match your team, brand, or domain conventions where needed.
 3. No specific AI provider or API key is required beyond your configured skrptiq LLM provider.
 
 ## Provider Notes
