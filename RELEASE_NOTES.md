@@ -1,5 +1,8 @@
 # Release Notes
 
+## v1.1.29
+GH#863 Wave 1 — fix K-045 intent/output mismatch. The `newsletter-writer` prompt (the promised newsletter deliverable) was never invoked by the workflow. Add a backing skill (`newsletter-composition`, title "Newsletter Writer") and wire it as the terminal content step after the platform guide, consuming the content ideas via an explicit `content_ideas` binding. Re-pin `polish-language`→1.0.6 and bind the output_step `source` ← the newsletter, so language-polish now polishes the real deliverable. +1 skill (total 3).
+
 ## v1.1.28
 GH#845 — republish with American English (en-US) content, completing the source-only GH#805 flip that never reached the Hub. Copy only — no functional or behaviour change.
 

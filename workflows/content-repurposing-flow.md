@@ -17,6 +17,8 @@ connections:
     type: references
   - target: social-media-platform-guide
     type: uses
+  - target: newsletter-composition
+    type: uses
   - target: language-polish
     type: uses
 metadata:
@@ -28,6 +30,7 @@ composite_steps:
   - "content-ideation"
   - "content-briefing"
   - "social-media-platform-guide"
+  - "newsletter-composition"
   - "language-polish"
 execution:
   - skill: "content-repurposing"
@@ -53,12 +56,25 @@ execution:
   - id: "social-media-platform-guide"
     step_type: "local.template"
     output: { name: "platform_guide", type: "text" }
+  - skill: "newsletter-composition"
+    prompt: "newsletter-writer"
+    step_type: "generation"
+    output: { name: "newsletter", type: "text" }
+    bindings:
+      content_ideas:
+        from_step: "Content Ideation"
+        field: output
   - skill: "language-polish"
     prompt: "polish-language"
     step_type: "content"
+    output: { name: "polished_content", type: "text" }
     context:
       voice_profile: "Neutral professional tone"
       grammar_strictness: "Professional"
+    bindings:
+      source:
+        from_step: "Newsletter Writer"
+        field: output
 ---
 
 ## Overview

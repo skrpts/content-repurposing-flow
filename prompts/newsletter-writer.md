@@ -29,6 +29,11 @@ inputs:
     example: "OpenAI launched GPT-5. Notion added AI blocks."
     required: true
     type: text
+context_params:
+  content_ideas:
+    label: "Content Ideas"
+    description: "Selected content topic ideas produced earlier in the flow — the source material for the newsletter."
+    required: false
 connections:
   - target: content-repurposing
     type: derived_from
@@ -54,7 +59,7 @@ You are a newsletter writer. Compose a newsletter edition using the topics and u
 
 ## Topics
 
-{{steps.Content Ideation.output}}
+{{step.context.content_ideas}}
 
 Using the selected topics above, write the newsletter edition covering the main feature and quick-read items.
 

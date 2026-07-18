@@ -3,7 +3,7 @@ id: "103697b1-9a25-4e57-8801-f69ae7caa4c9"
 name: "content-repurposing-flow"
 display_name: "Content Repurposing Flow"
 description: "Transforms source content into multiple format adaptations per channel"
-version: "1.1.28"
+version: "1.1.29"
 engine: ">=0.1.0"
 
 # --- Attribution ---
@@ -61,8 +61,8 @@ dependencies:
     checksum: "sha256:18783015383c041de9c3fdaa191b79172ab534348448c20c74f9a967ab4dd917"
   - id: "9b1771e0-39b0-4fbc-8d45-738f51b6083a"
     name: "polish-language"
-    version: 1.0.3
-    checksum: "sha256:b48c92d9a1f25091d5b337b871ef065e45e9fcd3a9117a22e63bab19a1d0325a"
+    version: 1.0.6
+    checksum: "sha256:c9ad71f960c5bd2bdafc8c41a283acce4fb34ee9b9dc5f761d7443b5f18ecc40"
   - id: "8a9ac21e-e26c-4064-825a-5150eb24df44"
     name: "social-media-platform-guide"
     version: 1.0.1
@@ -85,18 +85,18 @@ requires:
 
 # --- Contents ---
 contents:
-  skills: 0
+  skills: 1
   prompts: 1
   workflows: 1
   services: 0
   sources: 0
   documents: 0
   assets: 0
-  total: 2
+  total: 3
 
 security:
   status: "pass"
-  scanned_at: "2026-07-17T20:20:10.389Z"
+  scanned_at: "2026-07-18T16:45:20.364Z"
   scanner_version: "3.3.0"
   syntactic: "pass"
   structural: "pass"
