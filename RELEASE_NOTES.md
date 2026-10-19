@@ -1,5 +1,11 @@
 # Release Notes
 
+## v1.1.31
+GH#1044 — the last of the required-but-undocumented inputs, resolved by testing whether the existing table name is itself required by a prompt rather than by how similar the names look. Renamed source_content to the name the prompt consumes; documented recent_content. Rows generated from the requiring prompt's own declared description, example and required flag. No behaviour change; documentation only.
+
+## v1.1.30
+GH#1044 — document the inputs this workflow's prompts REQUIRE but its Inputs table never listed. A user supplying exactly what the table asked for was running with required parameters unsatisfied — a silent wrong run, not a documentation nicety. Renamed 1 row(s) (source_content) to the name the prompt actually consumes; documented 7 input(s): audience_profile, campaign_topic, industry_news, key_messages, recent_content, target_platforms, upcoming_announcements. Every row is generated from the requiring prompt's own declared description, example and required flag — none invented. No behaviour change; documentation only.
+
 ## v1.1.29
 GH#863 Wave 1 — fix K-045 intent/output mismatch. The `newsletter-writer` prompt (the promised newsletter deliverable) was never invoked by the workflow. Add a backing skill (`newsletter-composition`, title "Newsletter Writer") and wire it as the terminal content step after the platform guide, consuming the content ideas via an explicit `content_ideas` binding. Re-pin `polish-language`→1.0.6 and bind the output_step `source` ← the newsletter, so language-polish now polishes the real deliverable. +1 skill (total 3).
 

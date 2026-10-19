@@ -111,8 +111,14 @@ Invoke the **newsletter-writer** prompt to compose a newsletter edition from the
 
 | Name | Required | Description | Example |
 |------|----------|-------------|---------|
-| `{{input.source_content}}` | Yes | Source content | `Paste the relevant brief, notes, source material, or dataset here.` |
+| `{{input.recent_content}}` | Yes | Content published recently | `Last 5 blog posts with titles, dates, and performance metrics` |
 | `{{input.brand_voice}}` | No | Brand voice guidelines | `Professional but approachable. Avoid jargon. Use active voice.` |
+| `{{input.audience_profile}}` | Yes | Profile of the target audience | `Marketing managers, 30-45, at companies with 50-500 employees` |
+| `{{input.campaign_topic}}` | Yes | The topic or theme for the campaign | `Product launch for new AI features` |
+| `{{input.industry_news}}` | Yes | Recent industry news or trends relevant to the analysis | `OpenAI launched GPT-5. Notion added AI blocks.` |
+| `{{input.key_messages}}` | Yes | Core messages to communicate | `Save 10 hours/week on repetitive AI tasks. No code required.` |
+| `{{input.target_platforms}}` | Yes | Platforms to create content for | `LinkedIn, Twitter` |
+| `{{input.upcoming_announcements}}` | Yes | Planned announcements or releases | `New pricing tier launching May 15. Partnership announcement June 1.` |
 
 ## Outputs
 
