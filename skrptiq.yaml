@@ -3,7 +3,7 @@ id: "103697b1-9a25-4e57-8801-f69ae7caa4c9"
 name: "content-repurposing-flow"
 display_name: "Content Repurposing Flow"
 description: "Transforms source content into multiple format adaptations per channel"
-version: "1.1.31"
+version: "1.1.33"
 engine: ">=0.1.0"
 
 # --- Attribution ---
@@ -41,12 +41,12 @@ dependencies:
     checksum: "sha256:866ea46771286bfb3175a8353672a56611c1cbd149520dbaf12e5465f110b3c1"
   - id: "18c65203-c687-46f1-9ded-e09eb3f7862a"
     name: "create-content-brief"
-    version: 1.0.4
-    checksum: "sha256:f02b232209ff1beebb1a306af1f01b2a71968651bd26e4165b91a11295ff4384"
+    version: 1.0.5
+    checksum: "sha256:4fd77b1963d8d9e798b2407053c38c69a1d88578118fb524e7e163bbfbf7e0e3"
   - id: "370c217e-d5ed-46bc-9475-6e1ba259267a"
     name: "generate-content-ideas"
-    version: 1.0.2
-    checksum: "sha256:a5ca3e1bf676fb2e95f63446a913ed9493b43ac57cf48b1b32f56e0b124d0019"
+    version: 1.0.3
+    checksum: "sha256:723ce552535f9e4ed08ce36cc232c8e8a147f174fdde3628c108c3cd756c6c07"
   - id: "eef0f2df-0ee2-4b15-b400-ce3cf2193600"
     name: "headline-writing"
     version: 1.0.3
@@ -61,20 +61,20 @@ dependencies:
     checksum: "sha256:18783015383c041de9c3fdaa191b79172ab534348448c20c74f9a967ab4dd917"
   - id: "9b1771e0-39b0-4fbc-8d45-738f51b6083a"
     name: "polish-language"
-    version: 1.0.6
-    checksum: "sha256:c9ad71f960c5bd2bdafc8c41a283acce4fb34ee9b9dc5f761d7443b5f18ecc40"
+    version: 1.0.7
+    checksum: "sha256:637891c464e09eb353932f9a37a59dd8bfe77be7117fb6918e032fba802040d0"
   - id: "8a9ac21e-e26c-4064-825a-5150eb24df44"
     name: "social-media-platform-guide"
-    version: 1.0.1
-    checksum: "sha256:e42f7e182c331773385b464aee684ce8ae6cf9b4d0d359cddce3249d6a4dd92e"
+    version: 1.0.2
+    checksum: "sha256:8d8ce58349d7a637f0dc34fe40766ec47ac3aba1e1ed792fd22c891145c9b7a6"
   - id: "e739e678-990e-4165-a3c1-86394bf42d58"
     name: "social-media-post-generator"
-    version: 1.0.3
-    checksum: "sha256:2a63a60b8ec9239ba0b9b4f111804a76db9e42d05c3a1b17731f09984f07bc0b"
+    version: 1.0.5
+    checksum: "sha256:8c6f1d7dbfa17840725da8d4ceb46414f67e3997b32df8c73ab75538693cc82c"
   - id: "e95fc43e-3d81-4fbb-82be-279c8a58757f"
     name: "write-headlines"
-    version: 1.0.3
-    checksum: "sha256:6184682c9341e06fdd483eaef3559786bdd0a6f976691f1a7e6265e78bad075c"
+    version: 1.0.7
+    checksum: "sha256:f772e0bf44260e5c3e166822238b3d90b8db387fce8d3ad789960a7a61002a72"
 
 requires:
   services:
@@ -96,7 +96,7 @@ contents:
 
 security:
   status: "pass"
-  scanned_at: "2026-10-19T10:11:21.834Z"
+  scanned_at: "2026-10-25T21:54:15.680Z"
   scanner_version: "3.3.0"
   syntactic: "pass"
   structural: "pass"

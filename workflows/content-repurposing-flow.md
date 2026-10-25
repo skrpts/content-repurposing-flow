@@ -21,6 +21,13 @@ connections:
     type: uses
   - target: language-polish
     type: uses
+inputs:
+  recent_content:
+    label: "Recent Content"
+    description: "Content published recently"
+    example: "Last 5 blog posts with titles, dates, and performance metrics"
+    required: true
+    type: text
 metadata:
   estimated_duration: "5-15 minutes"
   trigger: manual
@@ -37,6 +44,9 @@ execution:
     prompt: "social-media-post-generator"
     step_type: "generation"
     output: { name: "repurposed_content", type: "text" }
+    bindings:
+      source:
+        from_input: "recent_content"
   - skill: "content-ideation"
     prompt: "generate-content-ideas"
     step_type: "generation"
@@ -53,6 +63,10 @@ execution:
     output: { name: "brief", type: "text" }
     context:
       target_audience: "General professional audience"
+    bindings:
+      source:
+        from_step: "Content Ideation"
+        field: output
   - id: "social-media-platform-guide"
     step_type: "local.template"
     output: { name: "platform_guide", type: "text" }

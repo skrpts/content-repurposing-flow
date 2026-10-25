@@ -1,5 +1,32 @@
 # Release Notes
 
+## v1.1.33
+GH#1124 — bind the source content for step 1, which has been hard-erroring on every run.
+
+Step 1 invokes `social-media-post-generator`, whose body read `{{steps.Content Briefing.output}}` — a step at position **3**. A forward reference: this workflow declares no `requires` edges and `DeriveOrderingEdges` defaults to false, so nothing reorders the steps, the reference never resolves, and the step hard-errors. **Step 1 could not complete, on any run.**
+
+The prompt now declares a required `source` slot (1.0.5), and this workflow binds it to `{{input.recent_content}}` — the content this flow exists to repurpose, and the input its own table marks required as *"Content published recently"*.
+
+**Bound from an input rather than from a step, deliberately.** At position 1 there is no earlier step to bind, and reordering the workflow to manufacture one would change published behaviour to satisfy a mechanism. The prompt's own description — *"Creates platform-specific social media posts from source content"* — is satisfied by the flow's source content, not by a brief produced two steps later.
+
+`recent_content` is now also DECLARED on this workflow node, mirroring the declaration `prompts/newsletter-writer.md` already carried. The Inputs table documented it but a table is not a declaration, and binding it surfaced that — the canonical scan refused `from_input: "recent_content"` until the node declared it.
+
+## v1.1.32
+GH#1100 consumer wave (batch 3) — declare the data flow this workflow was resolving positionally.
+
+Each stage below now receives its input through a declared `bindings:` entry instead of `default_from_previous`, which K-073 revoked. **The value is unchanged**: every binding names the step that immediately precedes it, which is exactly what the positional default resolved to. What changes is that the dependency is stated rather than inferred from position, so a reorder can no longer silently feed a stage the wrong artefact.
+
+Bindings added:
+  `create-content-brief` ← `from_step: "Content Ideation"` (step 3)
+
+Dependency pins moved to the published versions that declare these slots:
+  `create-content-brief` 1.0.4 → 1.0.5
+  `generate-content-ideas` 1.0.2 → 1.0.3
+  `polish-language` 1.0.6 → 1.0.7
+  `social-media-platform-guide` 1.0.1 → 1.0.2
+  `social-media-post-generator` 1.0.3 → 1.0.4
+  `write-headlines` 1.0.3 → 1.0.7
+
 ## v1.1.31
 GH#1044 — the last of the required-but-undocumented inputs, resolved by testing whether the existing table name is itself required by a prompt rather than by how similar the names look. Renamed source_content to the name the prompt consumes; documented recent_content. Rows generated from the requiring prompt's own declared description, example and required flag. No behaviour change; documentation only.
 
